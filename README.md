@@ -1,2 +1,2 @@
-# WebExtensionDevTutorial
-Følger en tutorial for å lære litt flere funksjonaliteter jeg kan lage
+# TextReplacement
+Erstatt text på nettsider
