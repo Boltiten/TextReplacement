@@ -1,15 +1,20 @@
 {
-    "manifest_version": 2,
-    "name": "Morten Ad-Blocker",
+    "manifest_version": 3,
+    "name": "Morten Text Replacement",
     "version": "1.0",
-    "description": "Morten Ad-Blocker prosjekt",
-    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
-    "background": {
-        "scripts": ["background.js"]
-    },
+    "description": "Morten Text Replacement prosjekt",
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["script.js"],
+        "css": ["styles.css"]
+    }],
     "icons": {
         "16": "icons/logo_16.png",
         "48": "icons/logo_48.png",
         "128": "icons/logo_128.png"
-    }
+    },
+    "web_accessible_resources": [{
+        "resources": ["/icons/*.png"],
+        "matches": ["<all_urls>"]
+    }]
 }

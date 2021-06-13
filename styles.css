@@ -1,3 +1,5 @@
-body {
-    background-color: red !important;
+.logoClass {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 5px;
 }
